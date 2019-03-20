@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ded156b9-36ae-487f-afc4-390d6415bfef" name="Default Changelist" comment="" />
+    <list default="true" id="ded156b9-36ae-487f-afc4-390d6415bfef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileTree/cn/lzumi/FileTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileTree/cn/lzumi/GetPinYIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileTree/cn/lzumi/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileTree/cn/lzumi/新建文件夹/awfaf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileTree/cn/lzumi/新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/lzumi/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/lzumi/新建文件夹/awfaf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/lzumi/新建文本文档.txt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/lzumi/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="342">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -25,6 +36,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -33,28 +47,22 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
-    <option name="y" value="100" />
-    <option name="width" value="2214" />
-    <option name="height" value="1128" />
+    <option name="x" value="258" />
+    <option name="y" value="233" />
+    <option name="width" value="2215" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="FileTree" type="b2602c69:ProjectViewProjectNode" />
               <item name="FileTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FileTree" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FileTree" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FileTree" type="b2602c69:ProjectViewProjectNode" />
@@ -71,6 +79,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -84,6 +93,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552992742916" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,16 +139,18 @@
       <updated>1552990030332</updated>
       <workItem from="1552990031873" duration="2721000" />
       <workItem from="1553002064197" duration="3553000" />
+      <workItem from="1553084277242" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6274000" />
+    <option name="totallyTimeSpent" value="6916000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="80" width="1771" height="902" extended-state="0" />
+    <frame x="207" y="187" width="1772" height="903" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29480442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29813302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -179,8 +191,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cn/lzumi/FileTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
