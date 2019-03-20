@@ -3,14 +3,25 @@ package cn.lzumi;
 //import java.io.FileNotFoundException;
 //import java.io.IOException;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 
 import static cn.lzumi.GetPinYIn.getPinYin;
 
 public class FileTree {
     public static void main(String[] args) {
-        String file = "D:\\D\\【he11oworld.com】毕向东25天";
+
+        BufferedReader bufr = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("请输入文件夹路径：");
+        String file = null;
+        try {
+            file = bufr.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //String s = getPinYin("一个拼音testTT");
         //System.out.println(s);
         showDir(file, 0);
@@ -46,9 +57,7 @@ public class FileTree {
         if (file.exists()) {
             File[] files = file.listFiles();
             if (files != null) {
-                if (files.length == 0)
-                    System.out.println(file.getAbsolutePath() + " 文件夹为空");
-                else {
+                if (files.length != 0) {
                     //对文件和文件夹进行排序
                     Arrays.sort(files, (o1, o2) -> {
                         //将文件夹与文件分开排序
