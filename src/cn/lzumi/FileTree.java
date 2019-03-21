@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-import static cn.lzumi.GetPinYIn.getPinYin;
 
 public class FileTree {
     public static void main(String[] args) {
@@ -80,7 +79,7 @@ public class FileTree {
                         else if (o2.isDirectory() && o1.isFile())
                             return 1;
                         //对字符串大写处理，使返回的拼音为小写、英文为大写，从而将英文和中文分开排序。
-                        return getPinYin(o1.getName().toUpperCase()).compareTo(getPinYin(o2.getName().toUpperCase()));
+                        return GetPinYin.getPinYin(o1.getName().toUpperCase()).compareTo(GetPinYin.getPinYin(o2.getName().toUpperCase()));
                     });
 
                     long size0;
