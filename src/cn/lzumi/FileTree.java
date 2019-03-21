@@ -49,8 +49,22 @@ public class FileTree {
     }
 
     //打印目录文件和文件夹名称和大小
-    //path为文件夹路径，level为初始层级，一般为0
-    private static void showDir(String path, int level) {
+    private static void showDir(String path) {
+        showDir(path, 0, 0);
+    }
+
+    //打印目录文件和文件夹名称和大小,并过滤文件大小小于size的
+    private static void showDir(String path, long size) {
+        showDir(path, size, 0);
+    }
+
+    /**
+     * @param path  path为文件夹路径
+     * @param size  过滤大小小于size的文件或文件夹
+     * @param level level为初始层级，一般为0
+     *              打印目录文件和文件夹名称和大小
+     */
+    private static void showDir(String path, long size, int level) {
 
         File file = new File(path);
         level++;
@@ -69,12 +83,19 @@ public class FileTree {
                         return getPinYin(o1.getName().toUpperCase()).compareTo(getPinYin(o2.getName().toUpperCase()));
                     });
 
+                    long size0;
                     for (File file2 : files) {
+
                         if (file2.isDirectory()) {
-                            System.out.println(levelSign(level) + "【" + file2.getName() + "】" + "\t\t\t大小：" + sizeFormat(getDirSize(file2)));
-                            showDir(file2.getAbsolutePath(), level);
+                            size0 = getDirSize(file2);
+                            if (size == 0 || size0 > size) {
+                                System.out.println(levelSign(level) + "【" + file2.getName() + "】" + "\t\t\t大小：" + sizeFormat(size0));
+                                showDir(file2.getAbsolutePath(), size, level);
+                            }
                         } else {
-                            System.out.println(levelSign(level) + file2.getName() + "\t\t\t大小：" + sizeFormat(file2.length()));
+                            size0 = file2.length();
+                            if (size == 0 || size0 > size)
+                                System.out.println(levelSign(level) + file2.getName() + "\t\t\t大小：" + sizeFormat(size0));
                         }
                     }
                     //对每个文件夹进行一下分隔
@@ -84,6 +105,15 @@ public class FileTree {
         } else {
             System.out.println("文件夹不存在!");
         }
+    }
+
+    /**
+     * @param path  path为文件夹路径
+     * @param level level为初始层级，一般为0
+     * @param size  过滤大小小于size的文件夹
+     */
+    private static void onlyShowDir(String path, int size, int level) {
+
     }
 
 
